@@ -1,0 +1,5 @@
+EXPOSING THE PROJECT AS JSON
+
+In order to Create the API to exposes the projects as JSON, I have written a code in the create.php file 
+that appends the data to JSON, and connected it to the HTML form, such that, When the user clicks on the 
+submit button, all the field data will append to “JSON project” data file.
