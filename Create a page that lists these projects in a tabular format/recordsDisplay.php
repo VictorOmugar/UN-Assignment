@@ -7,7 +7,7 @@
 <body>
     
 <?php
-$link=mysqli_connect("localhost","root","","projects");
+$link=mysqli_connect("localhost","root","","undata");
 
 $page=$_GET["page"];
 
