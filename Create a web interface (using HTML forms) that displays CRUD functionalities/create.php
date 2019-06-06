@@ -357,7 +357,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         </div>
                         <input type="submit" class="btn btn-primary" value="Submit">
                         <a href="index.php" class="btn btn-default">Cancel</a>
-                   
+                   <?php
+                    if(isset($message))
+                    {
+                        echo $message;
+                    }
+                    ?>
                     </form>
                 </div>
             </div>        
