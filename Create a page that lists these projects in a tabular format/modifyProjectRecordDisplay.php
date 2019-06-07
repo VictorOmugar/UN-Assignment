@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
     $first_disbursment_amount=$_POST['first_disbursment_amount'];
     $status=$_POST['status'];
 
-    $linkAdd=mysqli_connect("localhost","root","","projects");
+    $linkAdd=mysqli_connect("localhost","root","","undata");
 
 $queryAdd ="INSERT INTO projects(project_ref,country,implementing_office,project_title,grant_amount,dates_from_gcf,start_date,duration,end_date,readiness_of_NAP,type_of_readiness,first_disbursment_amount,status) VALUES('$project_ref','$country','$implementing_office','$project_title','$grant_amount','$dates_from_gcf','$start_date','$duration','$end_date','$readiness_of_NAP','$type_of_readiness','$first_disbursment_amount','$status')";
 
@@ -51,7 +51,7 @@ if(isset($_POST['delete'])){
 
     
     
-    $linkDelete=mysqli_connect("localhost","root","","projects");
+    $linkDelete=mysqli_connect("localhost","root","","undata");
     
     $queryDelete="delete from projects WHERE project_ref='$project_ref'";
     
@@ -83,7 +83,7 @@ if(isset($_POST['modify'])){
     $first_disbursment_amount=$_POST['first_disbursment_amount'];
     $status=$_POST['status'];
     
-    $linkUpdate=mysqli_connect("localhost","root","","projects");
+    $linkUpdate=mysqli_connect("localhost","root","","undata");
     
     $queryUpdate="UPDATE projects SET project_ref='$project_ref',country='$country',implementing_office='$implementing_office',project_title='$project_title',grant_amount='$grant_amount',dates_from_gcf='$dates_from_gcf',start_date='$start_date',duration='$duration',end_date='$end_date',readiness_of_NAP='$readiness_of_NAP',type_of_readiness='$type_of_readiness',first_disbursment_amount='$first_disbursment_amount',status='$status' WHERE project_ref ='$project_ref' ";
      
